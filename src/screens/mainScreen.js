@@ -3,7 +3,10 @@ import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import LocationBtn from "../component/locationBtn";
 import { Zocial } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
+import useLocation from "../hooks/useLocation";
+import { useIsFocused } from "@react-navigation/native";
 const MainScreen = ({ navigation }) => {
+  const [err] = useLocation(useIsFocused);
   return (
     <View style={styles.container}>
       <View style={styles.locationCtnr}>
