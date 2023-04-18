@@ -4,11 +4,11 @@ import {
   watchPositionAsync,
 } from "expo-location";
 import { useEffect, useState, useContext } from "react";
-//import { Context as locationContext } from "../context/locationContext";
+import { Context as locationContext } from "../context/locationContext";
 export default (shouldTrack) => {
   const [err, setErr] = useState(null);
 
-  //const { addLocation, state } = useContext(locationContext);
+  const { addLocation, state } = useContext(locationContext);
   let subsciber;
   const startWatching = async (shouldTrack) => {
     try {

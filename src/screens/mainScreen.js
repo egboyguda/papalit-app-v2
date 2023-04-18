@@ -5,6 +5,7 @@ import { Zocial } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 import useLocation from "../hooks/useLocation";
 import { useIsFocused } from "@react-navigation/native";
+import { Button } from "@rneui/base";
 const MainScreen = ({ navigation }) => {
   const [err] = useLocation(useIsFocused);
   return (
@@ -22,6 +23,16 @@ const MainScreen = ({ navigation }) => {
           icon={<Zocial name="dropbox" size={24} color="#A5D7E8" />}
           onpress={() => {
             navigation.navigate("MapScreen");
+          }}
+        />
+      </View>
+      <View style={{ position: "absolute", bottom: 20, left: 0, right: 0 }}>
+        <Button
+          title={"Book Now"}
+          buttonStyle={{
+            borderRadius: 20,
+            marginHorizontal: 40,
+            marginBottom: 35,
           }}
         />
       </View>

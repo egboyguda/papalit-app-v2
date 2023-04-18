@@ -4,6 +4,7 @@ import { setNavigator } from "./src/navigationRes";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import MainStacks from "./src/navigation/mainStack";
+import { Provider as LocationProvider } from "./src/context/locationContext";
 const Stack = createStackNavigator();
 
 App = () => {
@@ -21,5 +22,9 @@ App = () => {
 };
 
 export default () => {
-  return <App />;
+  return (
+    <LocationProvider>
+      <App />
+    </LocationProvider>
+  );
 };
