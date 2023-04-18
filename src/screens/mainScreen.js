@@ -6,6 +6,7 @@ import { Entypo } from "@expo/vector-icons";
 import useLocation from "../hooks/useLocation";
 import { useIsFocused } from "@react-navigation/native";
 import { Button } from "@rneui/base";
+import MenuTile from "../component/menuTile";
 const MainScreen = ({ navigation }) => {
   const [err] = useLocation(useIsFocused);
   return (
@@ -26,6 +27,7 @@ const MainScreen = ({ navigation }) => {
           }}
         />
       </View>
+      <MenuTile />
       <View style={{ position: "absolute", bottom: 20, left: 0, right: 0 }}>
         <Button
           title={"Book Now"}
