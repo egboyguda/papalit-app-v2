@@ -35,6 +35,7 @@ const MainScreen = ({ navigation }) => {
             borderRadius: 20,
             marginHorizontal: 40,
             marginBottom: 35,
+            backgroundColor: "#BA90C6",
           }}
         />
       </View>
@@ -44,12 +45,12 @@ const MainScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#0B2447", // Replace with your desired color
+    backgroundColor: "#FDF4F5", // Replace with your desired color
   },
   locationCtnr: {
     paddingTop: "10%",
     height: "20%",
-    backgroundColor: "#19376D",
+    backgroundColor: "#BA90C6",
     borderBottomLeftRadius: 50,
     borderBottomRightRadius: 50,
   },

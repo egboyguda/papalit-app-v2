@@ -8,6 +8,7 @@ const LocationBtn = ({ title, icon, onpress }) => {
       icon={icon}
       type="clear"
       iconLeft
+      titleStyle={{ color: "white" }}
       containerStyle={{ paddingLeft: 0, paddingRight: 0 }}
       onPress={() => {
         onpress();
